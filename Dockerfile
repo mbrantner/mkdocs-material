@@ -36,6 +36,8 @@ RUN \
   apk add -U openssh git && \
   python setup.py install 2>/dev/null && \
   rm -rf /tmp/*
+  
+RUN pip install markdown-include
 
 # Set working directory
 WORKDIR /docs
